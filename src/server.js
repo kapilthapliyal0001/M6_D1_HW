@@ -23,7 +23,7 @@ const publicFolderPath = join(
 // Initiate and Server details;
 const server = express();
 const port = process.env.PORT || 3001;
-console.log(process.env);
+
 // section for routes and global middlewares;
 
 //Cross Platform Origin verification;
@@ -79,9 +79,9 @@ mongoose
 // Listen the server at port 3001;
 
 console.table(listEndpoints(server));
-server.listen(port, () => {
-  console.log("✅Server is running on port: ", port);
-});
-server.on("error", (error) => {
-  console.log("❌ Server is NOT running on the PORT: ", port);
-});
+// server.listen(port, () => {
+//   console.log("✅Server is running on port: ", port);
+// });
+// server.on("error", (error) => {
+//   console.log("❌ Server is NOT running on the PORT: ", port);
+// });

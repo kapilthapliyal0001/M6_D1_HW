@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const {Schema, model} = mongoose;
 
-const UserSchema = new Schema(
+const usersSchema = new Schema(
   {
     category: {
       type: String,
@@ -46,5 +46,5 @@ const UserSchema = new Schema(
   }
 );
 
-export default model("User", UserSchema); // makes sure
+export default model("users", usersSchema); // makes sure
 // it is bounded to users collection;
